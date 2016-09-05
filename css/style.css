@@ -20,7 +20,6 @@ b {
     line-height: 21px;
     color: white;
     font-weight: bold;
-    font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 h2 {
@@ -28,7 +27,6 @@ h2 {
     line-height: 26px;
     color: black;
     font-weight: bold;
-    font-family: "Pt Sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -54,7 +52,6 @@ h2 {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "Pt Sans", "Arial", sans-serif;
     
     background-color: white; 
 }
@@ -68,6 +65,9 @@ h2 {
     top: 0px;
     left: 50%;
     margin-left: -69px;
+    
+    width: 138px;
+    height: 70px;
 }
 
 .main-navigation ul {
@@ -82,6 +82,8 @@ h2 {
 
 .main-navigation li {
     display: inline-block;
+    
+    width: 128px;
     
     font-size: 14px;
     line-height: 26px;
@@ -115,25 +117,17 @@ h2 {
     color: #d6d0cc;
 }
 
-.main-navigation image {
-    width: 140px;
-    height: 70px;
-    border: 1px solid red;
-    position: absolute;
-}
-
 .item-left {
     float: left;
     margin-right: 113px;
     padding: 15px 0;
-    padding-right: 18px;
 }
 
 .item-right {
     float: right;
     margin-left: 113px;
     padding: 15px 0;
-    padding-left: 50px;
+    text-align: right;
 }
 
 .page-title {
@@ -153,13 +147,14 @@ h2 {
 
 .content-title {
     padding-top: 60px;
-    padding-bottom: 55px;
+    padding-bottom: 51px;
     
     text-align: center;
 }
 
 .content h2 {
-    margin-bottom: 35px;
+    margin: 0;
+    margin-bottom: 28px;
 }
 
 .content p {
@@ -169,7 +164,6 @@ h2 {
     font-size: 14px;
     line-height: 26px;
     color: #333333;
-    font-family: "Pt Sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -183,7 +177,9 @@ h2 {
     background-color: #81b3d2;
     color: white;
     
-    padding: 54px 0;
+    padding: 0;
+    padding-top: 54px;
+    padding-bottom: 53px;
     
     text-align: center;
 }
@@ -200,22 +196,35 @@ h2 {
 .reasons-item .number {
     display: block;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .banner-text p {
-    padding: 0 59px;
+    padding: 0;
     margin: 0;
     
     color: white;
     font-size: 14px;
     line-height: 21px;
-    font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .banner-image {
     height: 256px;
     width: 800px;
+}
+
+.banner-image.right {
+    background-image: url(../img/photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -80px; 
+}
+
+.banner-image.left {
+    background-image: url(../img/photo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -80px; 
 }
 
 .left {
@@ -240,7 +249,7 @@ h2 {
     position: relative;
     
     padding-top: 160px;
-    padding-bottom: 85px;
+    padding-bottom: 82px;
     
     width: 400px;
     float: left;
@@ -250,7 +259,7 @@ h2 {
 
 .feature-item-image1 {
     position: absolute;
-    bottom: 198px;
+    bottom: 200px;
     left: 163px;
     
     width: 75px;
@@ -262,7 +271,7 @@ h2 {
 .feature-item-image2 {
     position: absolute;
     bottom: 200px;
-    left: 163px;
+    left: 164px;
     
     width: 74px;
     height: 70px;
@@ -273,7 +282,7 @@ h2 {
 .feature-item-image3 {
     position: absolute;
     bottom: 200px;
-    right: 170px;
+    right: 168px;
     
     width: 64px;
     height: 76px;
@@ -314,13 +323,15 @@ h2 {
 .reasons-item {
     float: left;
     width: 400px;
-    padding-top: 50px;
+    padding-top: 47px;
     padding-bottom: 60px;
+    
+    text-align: center;
 }
 
 .reasons-item b {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     
     color: black;
 }
@@ -339,8 +350,8 @@ h2 {
 }
 
 .offer-title {
-    padding-top: 55px;
-    padding-bottom: 140px;
+    padding-top: 54px;
+    padding-bottom: 133px;
     
     text-align: center;
 }
@@ -364,15 +375,17 @@ h2 {
 
 .offer-form {
     position: absolute;
-    top: 205px;
-    left: 315px;
+    top: 203px;
+    left: 316px;
     
     width: 570px;
 }
 
 
 .offer-title-button {
-    padding: 33px 0;
+    padding: 0;
+    padding-top: 29px;
+    padding-bottom: 31px;
     margin: 0;
     width: 570px;
     outline: none;
@@ -383,13 +396,14 @@ h2 {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-family: "Pt Sans", "Arial", sans-serif;
     font-weight: bold;
     
     background-color: #766357;
 }
 
 .hotel-search-form {
+    display: none;
+    
     padding: 57px;
     margin: 0;
     
@@ -399,12 +413,15 @@ h2 {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Pt Sans", "Arial", sans-serif;
+}
+
+.hotel-search-form-show {
+    display: block;
 }
 
 .input-container {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     height: 39px;
 }
 
@@ -424,23 +441,23 @@ h2 {
     height: 22px;
     
     background-image: url("../img/spritesheet.png");
-    background-position: -10px -10px;
+    background-position: -9px -11px;
     background-color: #f2f2f2;
 }
 
 .datapicker-button:hover {
-    background-position: -10px -52px;
+    background-position: -9px -53px;
 }
 
 .datapicker-button:active {
-    background-position: -10px -94px;
+    background-position: -9px -95px;
 }
 
 .hotel-search-form label {
     float: left;
     display: block;
-    width: 113px;
-    padding: 7px 0;
+    width: 111px;
+    padding: 4px 0;
 }
 
 .data-field {
@@ -448,30 +465,18 @@ h2 {
     display: inline-block;
     position: relative;
     
-    padding: 7px 15px;
-    width: 310px;
+    padding: 4px 12px;
+    width: 320px;
     
     border: none;
     outline: none;
     
-    background-color: #f2f2f2;
     
+    background-color: #f2f2f2;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     color: black;
-}
-
-.data-field::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    
-    width: 1200px;
-    height: 300px;
-    background: red;
 }
 
 .data-field:hover {
@@ -481,6 +486,8 @@ h2 {
 .data-field:focus {
     background-color: white; 
     border: 1px solid #e5e5e5;
+    padding: 2px 10px;
+    
 }
 
 .hotel-search-form .child-label {
@@ -491,7 +498,7 @@ h2 {
 .count-left {  
     float: left;
     font-size: 0px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
 }
 
 .count-right {
@@ -512,13 +519,13 @@ h2 {
     
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
-    background-position: 5px -277px;
+    background-position: 4px -277px;
     
     cursor: pointer;
 }
 
 .button-minus:hover {
-   background-position: 5px -323px; 
+   background-position: 6px -323px; 
 }
 
 .button-minus:active {
@@ -613,22 +620,22 @@ input[type="submit"]:active {
 }
 
 .main-page-footer {
-    margin-top: -119px;
+    margin-top: -125px;
     opacity: 0.9;
 }
 
 .footer-hashtag {
     float: left;
-    width: 240px;
+    width: 180px;
     margin-right: 88px;
     
-    padding: 11px 0;
+    padding: 10px 0;
+    padding-left: 60px;
     
     color: black;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    text-align: center;
 }
 
 .footer-social {
@@ -640,9 +647,9 @@ input[type="submit"]:active {
 
 .social-btn {
     display: inline-block;
-    width: 49px;
+    width: 46px;
     height: 49px;
-    margin: 0 2px;
+    margin: 0 1px;
     
     font-size: 0;
     vertical-align: top;
@@ -664,11 +671,11 @@ input[type="submit"]:active {
 }
 
 .social-btn-fb {
-  background-position: 10px -205px;
+  background-position: 8px -205px;
 }
 
 .social-btn-inst {
-  background-position: 5px -243px;
+  background-position: 4px -243px;
 }
 
 .social-btn-tw:active {
@@ -676,25 +683,24 @@ input[type="submit"]:active {
 }
 
 .social-btn-fb:active {
-  background-position: 10px -477px;
+  background-position: 8px -477px;
 }
 
 .social-btn-inst:active {
-  background-position: 5px -515px;
+  background-position: 4px -515px;
 }
 
 .footer-copyright {
     float: right;
-    width: 241px; 
+    width: 227px; 
     
-    padding: 3px 0;
+    padding: 4px 0;
     padding-bottom: 0;
-    text-align: center;
 }
 
 .footer-copyright span{
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 6px;
     padding: 10px 0;
     vertical-align: top;
 }
@@ -717,7 +723,7 @@ input[type="submit"]:active {
 }
 
 .searchform-container {
-    padding: 35px 73px;
+    padding: 29px 73px;
     background: #253b4d url("../img/filter_background.png");
 }
 
@@ -728,7 +734,7 @@ input[type="submit"]:active {
 }
 
 .search-form legend {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     
     font-size: 16px;
     line-height: 21px;
@@ -752,7 +758,11 @@ input[type="submit"]:active {
 }
 
 .checkbox-block li {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.checkbox-block li:nth-child(3n) {
+    margin-bottom: 0;
 }
 
 input[type="checkbox"] {
@@ -843,11 +853,13 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .price-controls {
     position: relative;
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
+    
+    margin-left: 10px;
 }
 
 .price-controls::after {
@@ -867,7 +879,7 @@ input[type="checkbox"]:checked:disabled + label::before {
     display: inline-block;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
 
     cursor: pointer;
@@ -875,7 +887,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
+    width: 80px;
     padding-left: 65px;
 }
 
@@ -895,6 +907,7 @@ input[type="checkbox"]:checked:disabled + label::before {
     position: relative;
 
     margin-bottom: 32px;
+    margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -939,7 +952,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .btn-transparent {  
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px;
 
     font-size: 14px;
     line-height: 20px;
@@ -963,7 +976,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .search-results-panel {
-    padding: 31px 73px;
+    padding: 30px 73px;
 }
 
 
@@ -1005,11 +1018,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .search-results-sort li {
     display: inline-block;
-    margin-right: 24px;
+    margin-right: 33px;
     
     font-size: 12px;
     
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 .search-results-sort a {
@@ -1097,11 +1110,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .search-result-item {
-    padding: 34px 73px;
+    padding: 30px 73px;
     
-    border-top: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;;
-    margin-bottom: -2px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;;
+    margin-bottom: -1px;
 }
 
 .search-result-item:last-child {
@@ -1153,7 +1166,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .description h2 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding: 0;
     
     font-size: 21px;
@@ -1179,7 +1192,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .description span{
     float: left;
     display: block;
-    width: 117px;
+    width: 115px;
 }
 
 .btn-description {
@@ -1243,3 +1256,4 @@ input[type="checkbox"]:checked:disabled + label::before {
     
     text-align: center;
 }
+

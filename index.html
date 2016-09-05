@@ -9,35 +9,33 @@
     </head>
     <body>
         <header class="main-header">
-                <nav class="main-navigation">
-                    <ul class="clearfix">
-                        <li class="item-left">
-                            <a href="#">Информация</a>
-                        </li>
-                        <li class="item-left">
-                            <a href="#">Фото и видео</a>
-                        </li>
-                        <li class="logo">
-                            <a href="#">
-                                <img src="img/logo.png" width="138" height="70" alt="Логотип">
-                            </a>
-                        </li>
-						<li class="item-right">
-                            <a href="#">Гостиницы</a>
-                        </li>
-                        <li class="item-right">
-                            <a href="#">Карта штата</a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="main-navigation">
+                <ul class="clearfix">
+                    <li class="item-left">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="item-left">
+                        <a href="#">Фото и видео</a>
+                    </li>
+				    <li class="item-right">
+                        <a href="inner.html">Гостиницы</a>
+                    </li>
+                    <li class="item-right">
+                        <a href="#">Карта штата</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img class="logo" src="img/logo.png" width="138" height="70" alt="Логотип">
+                </a>
+            </nav>
         </header>
         <main class="container">
             <div class="page-title"></div>
             <div class="content">
                 <div class="content-title">
                     <h2>
-                        Седона - небольшой городок в аризоне,<br>
-                        заслуживающий большего
+                        Седона &mdash; небольшой городок в аризоне,<br>
+                        заслуживающий большего!
                     </h2>
                     <p>
                         Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -46,12 +44,10 @@
                 <div class="banner clearfix">
                     <div class="banner-text left">
                         <b>Настоящий<br>городок</b>
-                        <span class="number"> - №1 -</span>
-                        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                        <span class="number"> &mdash; №1 &mdash;</span>
+                        <p>Седона &mdash; не аттракцион для туристов, <br> там течет своя жизнь</p>
                     </div>
-                    <div class="banner-image right">
-                        <img src="img/photo1.jpg" width="800" height="256" alt="Пейзаж">
-                    </div>
+                    <div class="banner-image right"></div>
                 </div>
                 <div class="features clearfix">
                     <ul>
@@ -73,30 +69,28 @@
                     </ul>
                 </div>
                 <div class="banner clearfix">
-                    <div class="banner-image left">
-                        <img src="img/photo2.jpg" width="800" height="256" alt="Мост дьявола">
-                    </div>
+                    <div class="banner-image left"></div>
                     <div class="banner-text right">
                         <b>Там есть<br>мост дьявола</b>
-                        <span class="number"> - №2 - </span>
-                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        <span class="number"> &mdash; №2 &mdash; </span>
+                        <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
                     </div>
                 </div>
                 <div class="reasons clearfix">
                     <ul>
                         <li class="reasons-item">
-                            <b>Небольшая площадь</b>
-                            <span class="number"> - №3 - </span>
+                            <b>Небольшая <br> площадь</b>
+                            <span class="number"> &mdash; №3 &mdash; </span>
                             <p>Все достопримечательности <br> находятся очень близко</p>
                         </li>
                         <li class="reasons-item">
-                            <b>Красивая дорога</b>
-                            <span class="number"> - №4 - </span>
+                            <b>Красивая <br> дорога</b>
+                            <span class="number"> &mdash; №4 &mdash; </span>
                             <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
                         </li>
                         <li class="reasons-item">
-                            <b>Мало туристов</b>
-                            <span class="number"> - №5 - </span>
+                            <b>Мало <br> туристов</b>
+                            <span class="number"> &mdash; №5 &mdash; </span>
                             <p>Большинство едет в Гранд Каньон и <br> толпится там</p>
                         </li>
                     </ul>
@@ -135,8 +129,8 @@
                         <input type="submit" value="Найти" name="search" id="search">
                     </form>
                 </div>
-                <div class="offer-map">
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705073.2221982239!2d-112.2766624841268!3d34.82342202843697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1473066151103" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
             </div>
         </main>
         <footer class="page-footer main-page-footer clearfix">
@@ -154,4 +148,6 @@
             </div>
         </footer>
     </body>
+    
+    <script src="js/hotel-search-form.js"></script>
 </html>
