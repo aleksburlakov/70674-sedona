@@ -383,6 +383,8 @@ h2 {
 
 
 .offer-title-button {
+    position: relative;
+    z-index: 1;
     padding: 0;
     padding-top: 29px;
     padding-bottom: 31px;
@@ -415,12 +417,24 @@ h2 {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    
+    -webkit-transition: all 0.3s;
+    
+    transition: all 0.3s;
+    
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
 }
 
-.hotel-search-form-show {
+.hotel-search-form--animation {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px)
+}
+
+.hotel-search-form--show {
     display: block;
-    animation-name: move-down;
-    animation-duration: 0.8s;
 }
 
 .input-container {
@@ -438,7 +452,7 @@ h2 {
     
     cursor: pointer;
     
-    top: 9px;
+    top: 8px;
     right: 9px;
     
     width: 22px;
@@ -470,7 +484,7 @@ h2 {
     display: inline-block;
     position: relative;
     
-    padding: 2px 11px;
+    padding: 4px 11px;
     width: 320px;
     
     border: none;
@@ -882,7 +896,8 @@ input[type="checkbox"]:checked:disabled + label::before {
     height: 22px;
 
     background: #ffffff;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -1254,13 +1269,3 @@ input[type="checkbox"]:checked:disabled + label::before {
     
     text-align: center;
 }
-
-@keyframes move-down {
-    0% {
-        transform: translateY(-2000px);
-    } 
-    100 % {
-        transform: translateY(0px);
-    }
-}
-

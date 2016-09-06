@@ -1,11 +1,27 @@
 var button = document.querySelector(".offer-title-button");
 var searchForm = document.querySelector(".hotel-search-form");
+var animationCssClass = "hotel-search-form--animation";
+var showCssClass = "hotel-search-form--show";
+var formVisible = false;
+var animationTimeoutId = 0;
+var animationDurationInMS = 300;
         
 button.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (searchForm.classList.contains("hotel-search-form-show")) {
-        searchForm.classList.remove("hotel-search-form-show");
+    clearTimeout(animationTimeoutId);
+    if (formVisible) {
+        searchForm.classList.remove(animationCssClass);
+        animationTimeoutId = setTimeout(function () {
+            searchForm.classList.remove(showCssClass);
+        }, animationDurationInMS);
     } else {
-        searchForm.classList.add("hotel-search-form-show");
+        if (!searchForm.classList.contains(showCssClass)) {
+            searchForm.classList.add(showCssClass);
+        }
+        setTimeout(function () {
+            if (formVisible) {
+                searchForm.classList.add(animationCssClass);
+            }
+        }, 50);
     }
+    formVisible = !formVisible;
 });
