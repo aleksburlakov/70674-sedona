@@ -419,6 +419,8 @@ h2 {
 
 .hotel-search-form-show {
     display: block;
+    animation-name: move-down;
+    animation-duration: 0.8s;
 }
 
 .input-container {
@@ -662,9 +664,6 @@ input[type="submit"]:active {
     text-decoration: none;
     
     background: #81b3d2 url("../img/spritesheet.png") no-repeat center;
-    
-    transition: 
-        background-position 0.5s;
 }
 
 .social-btn:hover {
@@ -720,15 +719,17 @@ input[type="submit"]:active {
     width: 113px;
     height: 39px;
     
-    background-image: url("../img/html_logo.png");
+    background-image: url("../img/spritesheet_htmllogo.png");
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
 }
 
 .footer-copyright a:hover {  
-    background-image: url("../img/html_logo-hvr.png");
+    background-position: -5px -103px;
 }
 
 .footer-copyright a:active {
-    background-image: url("../img/html_logo-dwn.png");
+    background-position: -5px -54px;
 }
 
 .searchform-container {
@@ -1130,25 +1131,6 @@ input[type="checkbox"]:checked:disabled + label::before {
     margin-bottom: 0;
 }
 
-.item-content {
-    position: relative;
-    
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-.item-amara {
-    background-image: url(../img/four-stars.png);
-}
-
-.item-desert {
-    background-image: url(../img/two-stars.png);
-}
-
-.item-villas {
-    background-image: url(../img/three-stars.png);
-}
-
 .search-results-items ul {
     margin: 0;
     padding: 0;
@@ -1253,16 +1235,32 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .rating {
-    position: absolute;
-    display: block;
+    float: right;
     width: 110px;
     
-    right: 0;
-    bottom: 0;
+    text-align: right;
+}
+
+.rating-stars {
+    margin-bottom: 42px;
+}
+
+.rating-text {
+    display: block;
+    width: 110px;
     
     padding: 3px 0;
     background-color: #f2f2f2;
     
     text-align: center;
+}
+
+@keyframes move-down {
+    0% {
+        transform: translateY(-2000px);
+    } 
+    100 % {
+        transform: translateY(0px);
+    }
 }
 
