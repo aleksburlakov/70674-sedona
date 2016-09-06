@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -17,7 +17,7 @@
                     <li class="item-left">
                         <a href="#">Фото и видео</a>
                     </li>
-				    <li class="item-right">
+                    <li class="item-right">
                         <a href="inner.html">Гостиницы</a>
                     </li>
                     <li class="item-right">
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
                 <a href="#">
-                    <img class="logo" src="img/logo.png" width="138" height="70" alt="Логотип">
+                <img class="logo" src="img/logo.png" width="138" height="70" alt="Логотип">
                 </a>
             </nav>
         </header>
@@ -52,17 +52,17 @@
                 <div class="features clearfix">
                     <ul>
                         <li class="feature-item">
-							<div class="feature-item-image1"></div>
+                            <div class="feature-item-image1"></div>
                             <b>Жилье</b>
                             <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
                         </li>
                         <li class="feature-item">
-							<div class="feature-item-image2"></div>
+                            <div class="feature-item-image2"></div>
                             <b>Еда</b>
                             <p>Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
                         </li>
                         <li class="feature-item">
-							<div class="feature-item-image3"></div>
+                            <div class="feature-item-image3"></div>
                             <b>Сувениры </b>
                             <p>Не только китайского, но и местного <br> производства!</p>
                         </li>
@@ -103,18 +103,18 @@
                 </div>
                 <div class="offer-form">
                     <button type="button" class="offer-title-button">Поиск гостиницы в седоне</button>
-                    <form class="hotel-search-form" action="#" method="get">
+                    <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
                         <div class="input-container">
-							<label for="begin_date">Дата заезда:</label>
-							<input class="data-field" type="text" name="begin_date" id="begin_date" value="24 апреля 2016">
+                            <label for="begin_date">Дата заезда:</label>
+                            <input class="data-field" type="text" name="begin_date" id="begin_date" value="24 апреля 2016">
                             <button class="datapicker-button" type="button"></button>
-						</div>
-						<div class="input-container">
-							<label for="end_date">Дата выезда:</label>
-							<input class="data-field" type="text" name="end_date" id="end_date" value="4 июля 2016">
+                        </div>
+                        <div class="input-container">
+                            <label for="end_date">Дата выезда:</label>
+                            <input class="data-field" type="text" name="end_date" id="end_date" value="4 июля 2016">
                             <button class="datapicker-button" type="button"></button>
-						</div>
-							<label for="men-count">Взрослые:</label>
+                        </div>
+                        <label for="men-count">Взрослые:</label>
                         <div class="count-left">
                             <button class="button-minus" type="button"></button>
                             <input class="count-text" type="text" value="2" name="men-count" id="men-count">
@@ -125,7 +125,7 @@
                             <input class="count-text" type="text" value="0" name="child-count" id="child-count">
                             <button class="button-plus" type="button"></button>
                         </div>
-						<label class="child-label" for="child-count">Дети:</label>
+                        <label class="child-label" for="child-count">Дети:</label>
                         <input type="submit" value="Найти" name="search" id="search">
                     </form>
                 </div>
@@ -144,10 +144,9 @@
             </div>
             <div class="footer-copyright">
                 <span>Website by</span>
-				<a href="#"></a>
+                <a href="#"></a>
             </div>
         </footer>
-        
-        <script src="js/hotel-search-form.js"></script>
+        <script src="js/hotel-search-form.min.js"></script>
     </body>
 </html>

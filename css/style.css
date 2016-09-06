@@ -507,7 +507,7 @@ h2 {
 .data-field:focus {
     background-color: white; 
     border: 1px solid #e5e5e5;
-    padding: 2px 10px;
+    padding: 4px 11px;
     
 }
 
@@ -689,27 +689,27 @@ input[type="submit"]:active {
 }
 
 .social-btn-tw {
-  background-position: 6px -440px;
+    background-position: 6px -440px;
 }
 
 .social-btn-fb {
-  background-position: 8px -205px;
+    background-position: 8px -205px;
 }
 
 .social-btn-inst {
-  background-position: 4px -243px;
+    background-position: 4px -243px;
 }
 
 .social-btn-tw:active {
-  background-position: 6px -592px;
+    background-position: 6px -592px;
 }
 
 .social-btn-fb:active {
-  background-position: 8px -477px;
+    background-position: 8px -477px;
 }
 
 .social-btn-inst:active {
-  background-position: 4px -515px;
+    background-position: 4px -515px;
 }
 
 .footer-copyright {
