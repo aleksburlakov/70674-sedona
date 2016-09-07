@@ -482,6 +482,7 @@ h2 {
 .data-field {
     float: left;
     display: inline-block;
+    vertical-align: top;
     position: relative;
     
     padding: 4px 11px;
@@ -729,6 +730,7 @@ input[type="submit"]:active {
 
 .footer-copyright a {
     display: inline-block;
+    vertical-align: top;
     
     width: 113px;
     height: 39px;
