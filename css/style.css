@@ -30,6 +30,16 @@ h2 {
     text-transform: uppercase;
 }
 
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+    
+    background-color: white;
+    
+    box-shadow: 10px 0 15px 0 #e1e1e1,
+                -10px 0 15px 0 #e1e1e1;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -44,16 +54,14 @@ h2 {
 }
 
 .main-header {
-    padding: 0 73px;
+    padding: 0 72px;
     width: 1056px;
     margin: 0 auto;
     
     color: black;
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
-    
-    background-color: white; 
+    font-weight: bold; 
 }
 
 .main-navigation {
@@ -636,8 +644,8 @@ input[type="submit"]:active {
     width: 1056px;
     padding-top: 35px;
     padding-bottom: 35px;
-    padding-right: 73px;
-    padding-left: 73px;
+    padding-right: 72px;
+    padding-left: 72px;
     margin: 0 auto;
     background-color: white;
 }
