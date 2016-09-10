@@ -627,7 +627,7 @@ input[type="submit"]:active {
     height: 593px;
     width: 1200px;
     
-    background: white url(../img/map.jpg) no-repeat;
+    background: #f4f1ec url(../img/map.jpg) no-repeat;
 }
 
 .page-footer {
